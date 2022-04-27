@@ -2,6 +2,8 @@ import React from 'react'
 import './homeComp.css'
 import Logo from './nav-logo.png'
 import HowTo from './howto.png'
+import Plans from './plans.png'
+
 
 const HomeComp = () => {
     return (
@@ -146,6 +148,59 @@ const HomeComp = () => {
                 <img className='how-to-img' src={HowTo} alt="how to" />
                 <div className='get-btn'>
                     <a href="#form">Get Medicare Quote Now</a>
+                </div>
+                <div className="steps">
+                    <div className="step">
+                        <h5>Fast, Easy & Quick Phone Call</h5>
+                    </div>
+                    <div className="step">
+                        <h5>Additional Benefts Included</h5>
+                    </div>
+                    <div className="step">
+                        <h5>Brands that you can trust</h5>
+                    </div>
+                    <div className="step">
+                        <h5>Pricing & Newest Plans</h5>
+                    </div>
+                    <div className="step">
+                        <h5>Get The Right Policy for you</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div className="how-much-container">
+                <div className="how-much">
+                    <h3>How Much Do Medicare Plans Cost?</h3>
+                    <div className="line"></div>
+                    <h6>Private insurance companies are required to offer the same benefits on each plan outlined above. However, they do control the premium they are able to charge for these plans. This is why it is important to shop around or speak with a licensed insurance agent that represents multiple insurance companies.</h6>
+                </div>
+                <div className="how-much">
+                    <h3>What is Medicare Supplemental Insurance?</h3>
+                    <div className="line"></div>
+                    <h6>Overall, Medicare Supplemental Insurance is a type of insurance that provides supplemental insurance on Original Medicare, which is the government program that provides health insurance benefits to seniors.</h6>
+                </div>
+            </div>
+
+            <div className="plans-container">
+                <h1>What Are Medicare Plans?</h1>
+                <br />
+                <p>That depends on your specific health care needs and budget. You'll get these additions to your Original Medicare benefits no matter which Medicare plan you join. Note that Plan F is no longer available to new Medicare enrollees.</p>
+                <br />
+                <img className='chart' src={Plans} alt="chart" />
+            </div>
+
+            <div className="why-use-container">
+                <div className="why-use">
+                    <h1>Why use GetMyMedicareInsured.com to Find a Medicare supplement plan?</h1>
+                    <br />
+                    <h2>We help you compare plans from trusted brands to save time & money, get the health insurance plan for you! if you have any questions or would like assistance to find a plan. Call us! We are here to help you!</h2>
+                    <br />
+                    <br />
+                    <div className='get-btn'>
+                        <a href="#form">Get Medicare Quote Now</a>
+                    </div>
+                    <br />
+                    <p>**licensed insurance agent are available to speak with you.</p>
                 </div>
             </div>
         </div>

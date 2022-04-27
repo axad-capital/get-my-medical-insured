@@ -90,6 +90,87 @@
     background-color: rgb(100, 0, 0);
 }
 
+.steps {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step > h5 {
+    font-weight: 800;
+}
+
+.step {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.how-much-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    background-color: rgb(211, 224, 241);
+    padding: 20px;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.how-much {
+    width: 40%;
+    max-width: 600px;
+}
+
+.how-much > h3 {
+    background-color: rgb(0, 0, 143);
+    color: white;
+}
+
+.how-much > h3, .how-much > h6 {
+    padding: 5px;
+}
+
+.plans-container {
+    text-align: center;
+    margin: 50px ;
+}
+
+.chart {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.why-use-container {
+    background-image: url('./why-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.why-use > h1 {
+    font-size: 50px;
+    color: rgb(236, 209, 174);
+}
+
+.why-use {
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+@media screen and (max-width: 920px) {
+    .why-use {
+        padding: 10px;
+    }
+    .why-use > h1 {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .nav {
         margin: 5px;
