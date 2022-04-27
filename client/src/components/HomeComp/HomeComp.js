@@ -3,13 +3,31 @@ import './homeComp.css'
 import Logo from './nav-logo.png'
 import HowTo from './howto.png'
 import Plans from './plans.png'
+import { v4 as uuidv4 } from 'uuid';
 
 
 const HomeComp = () => {
+
+    function handleFormSub() {
+        let formData = {
+            zip: document.getElementById('zip').value,
+            state: document.getElementById('state').value,
+            enrolled: document.getElementById('enrolled').value,
+            military: document.getElementById('military').value,
+            gender: document.getElementById('gender').value,
+            conditions: document.getElementById('conditions').value,
+            tabacco: document.getElementById('tabacco').value,
+            id: uuidv4()
+        }
+
+        localStorage.setItem('medicareInsure', JSON.stringify(formData))
+        window.location.href = '/thanks'
+    }
+
     return (
         <div>
             <div className="nav">
-                <img className='logo' src={Logo} alt="logo" />
+                <img onClick={() => window.location.href = '/'} className='logo' src={Logo} alt="logo" />
                 <div className="nav-num">
                     <p>Have a specific question? Ask a licensed insurance agent:</p>
                     <h4>Call For Quotes : (877) 930-2113</h4>
@@ -123,7 +141,7 @@ const HomeComp = () => {
 
                     <label htmlFor="condition">Do You Have Any Pre-existing Conditions?</label>
                     <br />
-                    <select name="condition" id="condition" placeholder='condition'>
+                    <select name="condition" id="conditions" placeholder='condition'>
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
@@ -138,7 +156,7 @@ const HomeComp = () => {
                     </select>
                     <br />
                     <br />
-                    <button className='form-btn'>Submit</button>
+                    <button onClick={handleFormSub} className='form-btn'>Submit</button>
                 </div>
             </div>
 
