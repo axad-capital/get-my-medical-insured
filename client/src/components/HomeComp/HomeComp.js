@@ -124,8 +124,8 @@ const HomeComp = () => {
                     <label htmlFor="military">Are You Or Your Spouse In The Military?</label>
                     <br />
                     <select name="military" id="military" placeholder='military'>
-                        <option value="Yes">Yes</option>
                         <option value="No">No</option>
+                        <option value="Yes">Yes</option>
                     </select>
                     <br />
                     <br />
@@ -142,8 +142,8 @@ const HomeComp = () => {
                     <label htmlFor="condition">Do You Have Any Pre-existing Conditions?</label>
                     <br />
                     <select name="condition" id="conditions" placeholder='condition'>
-                        <option value="Yes">Yes</option>
                         <option value="No">No</option>
+                        <option value="Yes">Yes</option>
                     </select>
                     <br />
                     <br />
@@ -151,8 +151,8 @@ const HomeComp = () => {
                     <label htmlFor="tabacco">Do You Smoke/Use Tabacco?</label>
                     <br />
                     <select name="tabacco" id="tabacco" placeholder='tabacco'>
-                        <option value="Yes">Yes</option>
                         <option value="No">No</option>
+                        <option value="Yes">Yes</option>
                     </select>
                     <br />
                     <br />
