@@ -8,6 +8,7 @@ import Partners from './pages/Legal/Partners';
 import Thanks from './components/Thanks/Thanks';
 import CallCenterWebform from './pages/CallCenterWebform';
 import CallCenterThanks from './components/Thanks/CallCenterThanks';
+import LongForm from './components/LongForm/LongForm';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/thanks' element={<Thanks />} />
           <Route exact path='/call-center-webform' element={<CallCenterWebform />} />
           <Route exact path='/call-center-thanks' element={<CallCenterThanks />} />
+          <Route exact path='/long-form' element={<LongForm />} />
         </Routes>
       </Router>
     </div>

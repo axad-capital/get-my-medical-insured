@@ -13,7 +13,6 @@ const CallCenterWebformComp = () => {
             phone: document.getElementById('phone').value,
             birth: document.getElementById('birth').value
         }
-
         fetch('https://enn4t4qlytmn828.m.pipedream.net', {
             method: 'POST',
             headers: {
@@ -62,7 +61,7 @@ const CallCenterWebformComp = () => {
                     </div>
                     <div className="call-img-container">
 
-                    <img className='call-center-img' src={CallCenterImg} alt="" />
+                        <img className='call-center-img' src={CallCenterImg} alt="" />
                     </div>
                 </div>
             </div>

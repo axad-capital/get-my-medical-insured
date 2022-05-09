@@ -8,6 +8,7 @@
 .logo {
     width: 40%;
     max-width: 350px;
+    cursor: pointer;
 }
 
 .nav-num > h4, .nav-num > h5 {
