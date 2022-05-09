@@ -76,6 +76,15 @@ select {
     max-width: 800px;
 }
 
+#income {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
 .long-form-form-container button {
     width: 90%;
     margin-top: 10px;

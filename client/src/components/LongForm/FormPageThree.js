@@ -24,7 +24,7 @@ const FormPageThree = (props) => {
         <br />
         <br />
 
-        <div>
+        <div className='.form-extra-info'>
           <label htmlFor="tobacco">Are You A Smoker?</label>
           <br />
           <select name="tobacco" id="tobacco">

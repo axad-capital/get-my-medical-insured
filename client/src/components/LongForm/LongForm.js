@@ -69,6 +69,11 @@ const LongForm = () => {
 
     function longFormSubmit(credit, tobacco, alcoholic, houseSize, income, pregnant, hospitalized) {
 
+        if (income < 0) {
+            setFormError("Income must be a postive number")
+            return
+        }
+
         if (credit === "" || tobacco === "" || alcoholic === "" || houseSize === "" || income === "" || pregnant === "" || hospitalized === "") {
             setFormError("Missing fields.")
             return
