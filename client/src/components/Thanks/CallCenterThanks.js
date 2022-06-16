@@ -4,8 +4,8 @@ const CallCenterThanks = () => {
     return (
         <div>
             <div style={{ textAlign: "center", margin: "50px" }}>
-                <h1>Info submitted</h1>
-                <h4>transfer the call now</h4>
+                <h1>Lead Received</h1>
+                <h4>Please transfer the call right away</h4>
             </div>
         </div>
     )
