@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './callCenterWebformComp.css'
 import Logo from '../HomeComp/nav-logo.png'
 import CallCenterImg from './call-center-img.png'
@@ -6,6 +6,16 @@ import CallCenterImg from './call-center-img.png'
 const CallCenterWebformComp = () => {
 
     const [error, setError] = useState('')
+    const [agents, setAgents] = useState()
+
+    useEffect(() => {
+      fetch('https://en4g4rm12xb1dw2.m.pipedream.net')
+      .then(res => res.json())
+      .then(data => {
+        setAgents(data.agents_available)
+      })
+    }, [])
+    
 
     function handleFormSubmit() {
 
@@ -69,6 +79,8 @@ const CallCenterWebformComp = () => {
                     <div className="call-center-btn">
                         <button onClick={handleFormSubmit}>Submit</button>
                     </div>
+                    <p style={{ color: 'red', textAlign: 'center', fontWeight: '500', fontSize: '25px' }}>Agents Available: {agents}</p>
+                    <br />
                     <p style={{ color: 'red', textAlign: 'center', fontWeight: '700' }}>{error}</p>
                     <div className="call-img-container">
 
